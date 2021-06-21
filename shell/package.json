@@ -19,7 +19,7 @@
     "xstart": "react-scripts start",
     "start": "yarn webpack serve",
     "xbuild": "react-scripts build",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
