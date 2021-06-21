@@ -1,0 +1,17 @@
+export const blue50 = "#b3e5fc";
+export const blue100 = "#a7d8ef";
+export const blue700 = "#1976d2";
+export const blue800 = "#004ba0";
+export const yellow50 = "#fff176";
+export const yellow100 = "#ece071";
+export const yellow800 = "#f9a825";
+export const yellow900 = "#d88e16";
+export const red50 = "#ff8a65";
+export const red100 = "#e67b59";
+export const red800 = "#b71c1c";
+export const red900 = "#a01616";
+export const gray900 = "#1f1f1f";
+export const gray800 = "#757575";
+export const gray200 = "#e0e0e0";
+export const gray100 = "#f5f5f5";
+export const white = "#fff";
