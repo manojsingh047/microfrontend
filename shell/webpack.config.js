@@ -53,8 +53,8 @@ module.exports = {
             remotes: {
                 // shell: "shell@http://localhost:8000/remoteEntry.js",
                 // dashboard: "dashboard@http://localhost:8001/remoteEntry.js",
-                // order: "order@http://localhost:8002/remoteEntry.js",
-                profile: "profile@http://localhost:8003/remoteEntry.js",
+                order: "order@http://localhost:8002/remoteEntry.js",
+                // profile: "profile@http://localhost:8003/remoteEntry.js",
             },
             exposes: {
                 "./Shell": "./src/components/shell/Shell",

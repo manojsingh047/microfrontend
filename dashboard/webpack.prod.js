@@ -35,17 +35,13 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: "shell",
+            name: "dashboard",
             filename: "remoteEntry.js",
             remotes: {
-                // shell: "shell@http://localhost:8000/remoteEntry.js",
-                // dashboard: "dashboard@https://micro-dashboard.netlify.app/remoteEntry.js",
-                order: "order@https://micro-order.netlify.app/remoteEntry.js",
-                // profile: "profile@https://micro-profile.netlify.app/remoteEntry.js",
+                shell: "shell@https://micro-shell.netlify.app/remoteEntry.js",
             },
             exposes: {
-                "./Shell": "./src/components/shell/Shell",
-                "./Service": "./src/context/Service",
+                "./DashboardService": "./src/components/dashboard-service/DashboardService",
             },
             shared: [
                 {
@@ -59,8 +55,6 @@ module.exports = {
                         requiredVersion: deps["react-dom"],
                     },
                 },
-                // Workaround explaination: https://www.youtube.com/watch?v=-LNcpralkjM&t=540
-                "./src/context/Service",
             ],
         }),
         new HtmlWebpackPlugin({

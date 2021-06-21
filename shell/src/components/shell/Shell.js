@@ -9,8 +9,8 @@ import AppDrawer from "../app-drawer/AppDrawer";
 import Viewport from "../viewport/Viewport";
 
 // const DashboardService = React.lazy(() => import("dashboard/DashboardService"));
-// const OrderService = React.lazy(() => import("order/OrderService"));
-const ProfilePage = React.lazy(() => import("profile/ProfilePage"));
+const OrderService = React.lazy(() => import("order/OrderService"));
+// const ProfilePage = React.lazy(() => import("profile/ProfilePage"));
 
 function useDrawer() {
     const { value, setItem } = useLocalStorageSync(
@@ -41,8 +41,8 @@ export default function Shell() {
                         <React.Suspense fallback={"Loading"}>
                             <Switch>
                                 {/* <Route path="/dashboard" component={DashboardService} /> */}
-                                {/* <Route path="/orders" component={OrderService} /> */}
-                                <Route path="/profile" component={ProfilePage} />
+                                <Route path="/orders" component={OrderService} />
+                                {/* <Route path="/profile" component={ProfilePage} /> */}
                             </Switch>
                         </React.Suspense>
                     </Box>
