@@ -15,7 +15,6 @@ import CardAvatar from "./../card/CardAvatar.js";
 import CardBody from "./../card/CardBody.js";
 import CardFooter from "./../card/CardFooter.js";
 
-import avatar from "./../../assets/img/faces/zack.jpg";
 
 const useStyles = makeStyles((theme) => ({
     appBarSpacer: theme.mixins.toolbar,
@@ -190,7 +189,7 @@ export default function UserProfile() {
                             <Card profile>
                                 <CardAvatar profile>
                                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                                        <img src={avatar} className={classes.avatarPic} alt="..." />
+                                        <img src={"?"} className={classes.avatarPic} alt="avatar" />
                                     </a>
                                 </CardAvatar>
                                 <CardBody profile>
