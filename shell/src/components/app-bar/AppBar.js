@@ -9,6 +9,9 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import clsx from "clsx";
 import { useServiceContext } from "../../context/Service";
+import LoginButton from "../login-button/LoginButton";
+import LogoutButton from "../logout-button/LogoutButton";
+import Profile from "../profile/Profile";
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -71,7 +74,10 @@ export default function AppBar(props) {
                 >
                     {serviceContext.title}
                 </Typography>
+                <LoginButton />
+                <LogoutButton />
             </Toolbar>
+            <Profile />
         </MuiAppBar>
     );
 }
